@@ -1,0 +1,177 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="GestionDesServices.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+       
+    </asp:ContentPlaceHolder>
+        
+   
+        <!--<script src="Ressource/jquery.slim.min.js"></script>
+        <link href="Ressource/bootstrap.min.css" rel="stylesheet" />
+        
+        <script src="Ressource/bootstrap.min.js"></script>-->
+        
+   <!-- 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   -->      
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--logo-->
+    <link rel="apple-touch-icon" sizes="180x180" href="website logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="website logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="website logo/favicon-32x32.png">
+    <link rel="manifest" href="website logo/site.webmanifest">
+    <!--logo end-->
+
+    <!--<link href="Site1.css" rel="stylesheet" />-->
+    <!--<link href="Page Acceuil/Acceuil.css" rel="stylesheet" />-->
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+        <header>
+        
+        <nav class="navbar navbar-expand-sm navbar-dark bg-danger static-top" id="nav" >
+            <div class="container-fluid" style="padding-right:-5px;">
+                    
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>   
+                <img src="website logo/go service logo.png" runat="server" class="navbar-brand" style="height:44px;">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                        <li class="nav-item active">
+                            <asp:HyperLink class="nav-link" ID="vers_acceuil" NavigateUrl="~/Page Acceuil/Acceuil.aspx" runat="server">Acceuil<span class="sr-only">(current)</span></asp:HyperLink>
+                        </li>
+
+                        <li class="nav-item">
+                            <asp:HyperLink class="nav-link" ID="vers_inscription" NavigateUrl="~/Join Us Page/Join Us.aspx" runat="server">Cree un Compte</asp:HyperLink>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <asp:HyperLink class="nav-link" ID="vers_aboutt" NavigateUrl="~/Page a propos/a propos.aspx" runat="server">Why us</asp:HyperLink>
+                        </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <asp:HyperLink class="btn btn-outline-light" ID="vers_login" NavigateUrl="~/Page se connecter/SeConnecter.aspx" runat="server">Se connecter</asp:HyperLink>
+                            </li>
+                        
+                        <li class="nav-item" id="log_out" runat="server">
+                            <asp:Button runat="server" class="nav-link btn btn-outline-dark" OnClick="Logout_click" Text="Se deconnecter" />
+                            
+                              
+                        </li>
+                        </ul>
+                        
+                        
+                        
+                        
+                    
+                    
+                        
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--NavBar-->
+<!--            
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" style="padding-right:0;">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+        <img class="navbar-brand" src="website logo/go service logo.png" runat="server">
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar" >
+      <ul class="nav navbar-nav">
+        
+        <li class="active">
+            <asp:HyperLink class="nav-link" ID="acceuil" NavigateUrl="~/Page Acceuil/Acceuil.aspx" runat="server">Acceuil<span class="sr-only">(current)</span></asp:HyperLink>
+        </li>
+
+        <li class="nav-item">
+            <asp:HyperLink class="nav-link" ID="inscription" NavigateUrl="~/Page Inscription/Inscription.aspx" runat="server">Cree un Compte</asp:HyperLink>
+        </li>
+
+        <li class="nav-item">
+            <asp:HyperLink class="nav-link" ID="services" NavigateUrl="~/Page Services disponibles/ServicesDisponibles.aspx" runat="server">Services Disponibles</asp:HyperLink>
+        </li>
+                        
+        <li class="nav-item">
+            <asp:HyperLink class="nav-link" ID="about" NavigateUrl="~/Page a propos/a propos.aspx" runat="server">Why us</asp:HyperLink>
+        </li>
+     </ul>
+      <ul class="nav navbar-nav navbar-right" style="margin-left:40%">
+        <li >
+            <asp:HyperLink class="btn btn-outline-danger" ID="login" NavigateUrl="~/Page se connecter/SeConnecter.aspx" runat="server"><span class="glyphicon glyphicon-log-in"></span> Se connecter</asp:HyperLink>
+        </li>
+        
+        <li  id="Logout" runat="server" >
+            <asp:LinkButton runat="server" OnClick="Logout_click" Class="btn btn-danger" ID="log"><span class="glyphicon glyphicon-log-out"></span> Se deconnecter</asp:LinkButton>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+
+<!-- End NavBar
+            -->
+     
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         
+        </asp:ContentPlaceHolder>
+     
+     <!-- all other page content -->
+   </div>
+
+
+    <!-- Footer 
+  
+    
+        <div class="" style="margin-top:0px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-12 text-white">
+                        <div class="row p-3">
+                            <div class="col-md-6 col-12">
+                                <p class="m-0">All Right Reserved 2020 - <a href="#" target="_blank">MonSite</a></p>
+                            </div>
+                            <div class="col-md-6 col-12 footer-icon text-right">
+                               <asp:HyperLink Target="_blank" runat="server" NavigateUrl="https://icons8.com/icons/set/linkedin">
+                                   <img src="imageSiteMaster/icons8-facebook-old-50.png" runat="server"/>
+                               </asp:HyperLink>
+                                <asp:HyperLink Target="_blank" runat="server" NavigateUrl="https://icons8.com/icons/set/linkedin">
+                                   <img src="~/imageSiteMaster/icons8-twitter-50.png" runat="server"/>
+                               </asp:HyperLink>
+                                <asp:HyperLink Target="_blank" runat="server" NavigateUrl="https://icons8.com/icons/set/linkedin">
+                                   <img src="~/imageSiteMaster/icons8-linkedin-50.png" runat="server" />
+                                </asp:HyperLink>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+-->         
+        
+    </form>
+</body>
+</html>

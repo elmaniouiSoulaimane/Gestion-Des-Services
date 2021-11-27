@@ -1,0 +1,29 @@
+﻿/*style pour navbar en generale*/
+#nav {
+    background-color: indianred !important;
+    height:100px !important;
+}
+
+/*style pour les bouttons de navbar*/
+#vers_acceuil,#vers_inscription,#vers_services,#vers_aboutt,#vers_login,#log_out{
+    color:white;
+    font-weight:bold;
+    font-size:larger;
+    border-radius:12px;
+    margin-right:15px;
+    text-align:right;
+}
+
+
+#vers_acceuil:hover,#vers_inscription:hover, #vers_services:hover, #vers_aboutt:hover, #vers_login:hover,#log_out:hover {
+    background-color: white;
+    color: indianred;
+}
+
+
+
+/*footer*/
+.footer-second {
+    background-color: indianred !important;
+    
+}
