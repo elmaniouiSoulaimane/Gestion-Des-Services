@@ -62,7 +62,7 @@
     }
     .split.right {
         right: 0;
-        background: url('Images/client.jpg.jpeg') center center no-repeat;
+        background: url('Images/client.jpg') center center no-repeat;
         background-size: cover;
     }
 
