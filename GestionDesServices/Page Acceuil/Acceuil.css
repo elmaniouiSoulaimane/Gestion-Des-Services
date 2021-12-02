@@ -43,13 +43,13 @@
         padding:10px;
     }
 #home-banner a:hover{
-    box-shadow:5px 5px 5px black;
+    box-shadow:2px 2px 60px black ;
 }
 
 /*STYLING SECTION*/
 section{
     width:100%;
-    margin: 50px 0px 50px;
+    margin: 50px 0px 150px;
 }
 
 section h2{
@@ -58,12 +58,12 @@ section h2{
 }
 
 #container{
-    display:grid;
+    display: grid;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 300px 300px;
-    grid-column-gap:50px;
-    grid-row-gap:75px;
-    margin:50px 10% 0px;
+    grid-column-gap: 50px;
+    grid-row-gap: 75px;
+    margin: 50px 10% 0px;
 }
 .sub-container{
     border-radius:20px;
@@ -85,23 +85,109 @@ section h2{
     text-align: justify;
 }
 
-/*FOOTER*/
-footer {
-    width: 100%;
-    height: 300px;
-    background-color: darkslategray;
-    padding: 3%;
-    color: aqua;
+/*A PROPOS*/
+
+
+
+/*--  stats --*/
+.stats {
+    background: url('Images/1172354.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
 }
-footer img{
-    height:200px;
-    width:200px;
+
+    .stats:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+        background: #000;
+    }
+
+    .stats h4 {
+        font-size: 50px;
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .stats p {
+        color: #aaa;
+    }
+
+    .stats span.fa {
+        font-size: 30px;
+        color: #eee;
+    }
+/*--  //stats --*/
+
+/*-- blog --*/
+.blog h4 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 30px;
+    text-transform: uppercase;
 }
-footer div{
-    float:right;
-    margin:0px 0px 0px;
-    width:50%;
+
+.blog ul li {
+    display: inline-block;
+    color: #777;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
-footer div a{
-    color:aqua;
+
+.blog a.btn {
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 12px 25px;
+    background: #333;
+    margin-top: 20px;
+    border-radius: 4px;
 }
+/*-- //blog --*/
+
+/*--  text --*/
+.text {
+    background: url(Images/pexels-photo-3769706.jpeg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+    .text:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+        background: #000;
+    }
+
+    .text h2.heading {
+        color: #fff;
+    }
+
+    .text p {
+        color: #ccc;
+        width: 80%;
+        margin: auto;
+    }
+
+    .text a.btn {
+        font-size: 17px;
+        letter-spacing: 2px;
+        color: #fff;
+        padding: 12px 25px;
+        border: 2px solid #fff;
+        margin-top: 30px;
+        border-radius: 4px;
+        display: inline-block;
+    }
+/*--  //text --*/
+

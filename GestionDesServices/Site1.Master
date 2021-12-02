@@ -41,7 +41,7 @@
                         </li>
                         
                         <li class="nav-item">
-                            <asp:HyperLink class="nav-link" ID="vers_aboutt" NavigateUrl="~/Page a propos/a propos.aspx" runat="server">Why us</asp:HyperLink>
+                            <asp:HyperLink class="nav-link" ID="vers_aboutt" NavigateUrl="~/Page a propos/a propos.aspx" runat="server">A Propos</asp:HyperLink>
                         </li>
                         </ul>
                         <ul class="navbar-nav">
@@ -123,38 +123,15 @@
      
      <!-- all other page content -->
    </div>
-
-
-    <!-- Footer 
-  
-    
-        <div class="" style="margin-top:0px">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-12 text-white">
-                        <div class="row p-3">
-                            <div class="col-md-6 col-12">
-                                <p class="m-0">All Right Reserved 2020 - <a href="#" target="_blank">MonSite</a></p>
-                            </div>
-                            <div class="col-md-6 col-12 footer-icon text-right">
-                               <asp:HyperLink Target="_blank" runat="server" NavigateUrl="https://icons8.com/icons/set/linkedin">
-                                   <img src="imageSiteMaster/icons8-facebook-old-50.png" runat="server"/>
-                               </asp:HyperLink>
-                                <asp:HyperLink Target="_blank" runat="server" NavigateUrl="https://icons8.com/icons/set/linkedin">
-                                   <img src="~/imageSiteMaster/icons8-twitter-50.png" runat="server"/>
-                               </asp:HyperLink>
-                                <asp:HyperLink Target="_blank" runat="server" NavigateUrl="https://icons8.com/icons/set/linkedin">
-                                   <img src="~/imageSiteMaster/icons8-linkedin-50.png" runat="server" />
-                                </asp:HyperLink>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <footer>
+        <img src="../website logo/android-chrome-192x192.png" alt="logo"/>
+        <div>
+            <span>E-mail : elmanioui.soulaimane@gmail.com</span>
+            <br /><a href="https://www.linkedin.com/in/soulaimane-elmanioui/">Linkedin</a>
+            <br /><a href="https://github.com/elmaniouiSoulaimane">Github</a>
+            <br /><a href="">Portfolio</a>
         </div>
- 
--->         
-        
+    </footer>
     </form>
 </body>
 </html>

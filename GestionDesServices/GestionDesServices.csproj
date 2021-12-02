@@ -111,7 +111,7 @@
     <Content Include="Join Us Page\Images\service-provider-photo.jpeg" />
     <Content Include="Join Us Page\Join Us.aspx" />
     <Content Include="Join Us Page\Join Us.css" />
-    <Content Include="Page a propos\Images\1172354.jpg" />
+    <Content Include="Page Acceuil\Images\1172354.jpg" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -119,40 +119,18 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
-    <Content Include="imageSiteMaster\icons8-facebook-old-50.png" />
-    <Content Include="imageSiteMaster\icons8-linkedin-50.png" />
-    <Content Include="imageSiteMaster\icons8-twitter-50.png" />
-    <Content Include="Page a propos\a propos.aspx" />
-    <Content Include="Page a propos\a propos.css" />
-    <Content Include="Page a propos\Images\about1.jpg" />
-    <Content Include="Page a propos\Images\about2.jpg" />
+    <Content Include="Page Acceuil\Images\about1.jpg" />
+    <Content Include="Page Acceuil\Images\about2.jpg" />
     <Content Include="Page Acceuil\Images\gratuit.png" />
     <Content Include="Page Acceuil\Images\quality.png" />
     <Content Include="Page Anonce Fournisseur\liste.aspx" />
-    <Content Include="Page Choisir Role\RoleStyle.css" />
-    <Content Include="Page Choisir Role\Votre Role.aspx" />
     <Content Include="Page Demande Service\Baby Siter\BabySitter.aspx" />
     <Content Include="Page Inscription\Images\client.jpeg" />
-    <Content Include="Page Inscription\Images\client2.jpeg" />
-    <Content Include="Page Inscription\Images\Fournisseur.jpeg" />
-    <Content Include="Page Inscription\Images\Fournisseur2.jpeg" />
-    <Content Include="Page Inscription\Images\Fournisseur3.jpg" />
     <Content Include="Page Inscription\Images\pexels-photo-3862376.jpeg" />
     <Content Include="Page Inscription\Inscription.css" />
     <Content Include="Page Inscription\InscriptionFournisseur.aspx" />
     <Content Include="Page List des fournisseurs\BasicCSS.css" />
     <Content Include="Page List des fournisseurs\Images\chris pratt.jpg" />
-    <Content Include="Page List des fournisseurs\Images\Deidara.jpg" />
-    <Content Include="Page List des fournisseurs\Images\Hinata.jpg" />
-    <Content Include="Page List des fournisseurs\Images\Itachi.jpg" />
-    <Content Include="Page List des fournisseurs\Images\Jiraya.jpg" />
-    <Content Include="Page List des fournisseurs\Images\Minato.jpg" />
-    <Content Include="Page List des fournisseurs\Images\Neji.jpg" />
-    <Content Include="Page List des fournisseurs\Images\Obito.jpg" />
-    <Content Include="Page List des fournisseurs\Images\Sarada.jpg" />
-    <Content Include="Page List des fournisseurs\Images\Sasori.jpg" />
-    <Content Include="Page List des fournisseurs\Images\Temari.jpg" />
-    <Content Include="Page List des fournisseurs\Images\Tsunade.jpg" />
     <Content Include="Page List des fournisseurs\List des fournisseurs.aspx" />
     <Content Include="Page List des fournisseurs\List des fournisseurs.css" />
     <Content Include="Page List des fournisseurs\List des fournisseurs.js" />
@@ -211,9 +189,7 @@
     <Content Include="website logo\favicon.ico" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Page Acceuil\Acceuil.aspx" />
-    <Content Include="Page Inscription\Images\client-signup.jpg" />
     <Content Include="Page Inscription\Inscription.aspx" />
-    <Content Include="Page se connecter\Images\man-working-from-home-cat.jpg" />
     <Content Include="Page se connecter\SeConnecter.aspx" />
     <Content Include="Page Acceuil\Acceuil.css" />
     <Content Include="Page se connecter\SeConnecter.css" />
@@ -294,26 +270,12 @@
     <Compile Include="Join Us Page\Join Us.aspx.designer.cs">
       <DependentUpon>Join Us.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Page a propos\a propos.aspx.cs">
-      <DependentUpon>a propos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Page a propos\a propos.aspx.designer.cs">
-      <DependentUpon>a propos.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Page Anonce Fournisseur\liste.aspx.cs">
       <DependentUpon>liste.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Page Anonce Fournisseur\liste.aspx.designer.cs">
       <DependentUpon>liste.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Page Choisir Role\Votre Role.aspx.cs">
-      <DependentUpon>Votre Role.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Page Choisir Role\Votre Role.aspx.designer.cs">
-      <DependentUpon>Votre Role.aspx</DependentUpon>
     </Compile>
     <Compile Include="Page Demande Service\Baby Siter\BabySitter.aspx.cs">
       <DependentUpon>BabySitter.aspx</DependentUpon>

@@ -3,7 +3,7 @@
     <link href="Join%20Us.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <div class="container" id="l">
+     <div class="container">
         <div class="split left">
             <asp:HyperLink runat="server" NavigateUrl="~/Page Inscription/InscriptionFournisseur.aspx" class="button" >Devenir Presataire</asp:HyperLink>
         </div>
